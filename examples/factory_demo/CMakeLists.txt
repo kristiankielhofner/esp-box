@@ -11,3 +11,6 @@ set(EXTRA_COMPONENT_DIRS
 add_compile_options(-fdiagnostics-color=always)
 
 project(factory_demo)
+
+# Example how to override CFLAGS - in this case enable -O2 with GCC8 in this project
+idf_build_set_property(COMPILE_OPTIONS "-Wno-stringop-truncation" APPEND)
