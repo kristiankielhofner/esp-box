@@ -7,6 +7,7 @@ export PLATFORM="esp32s3" # Current general family
 export FLASH_BAUD=1843200 # Optimistic but seems to work for me for now
 
 export SALLOW_PATH="$PWD"
+export IDF_TOOLS_PATH="$SALLOW_PATH/deps/idf-tools"
 #export ADF_PATH="$SALLOW_PATH/deps/esp-adf"
 export IDF_PATH="$SALLOW_PATH/deps/esp-idf"
 
@@ -76,8 +77,8 @@ destroy)
     read
     #git reset --hard
     #git clean -fdx
-    idf.py fullclean
-    rm -rf ~/.espressif deps
+    rm -rf build/*
+    rm -rf deps
     echo "Not a trace left. You will have to run setup again."
 ;;
 
