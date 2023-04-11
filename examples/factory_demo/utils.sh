@@ -2,9 +2,9 @@
 set -e # bail on error
 
 #ADF_VER="v2.5"
-IDF_VER="ef4b1b7704"
-PLATFORM="esp32s3" # Current general family
-FLASH_BAUD=1843200 # Optimistic but seems to work for me for now
+export IDF_VER="ef4b1b7704"
+export PLATFORM="esp32s3" # Current general family
+export FLASH_BAUD=1843200 # Optimistic but seems to work for me for now
 
 export SALLOW_PATH="$PWD"
 #export ADF_PATH="$SALLOW_PATH/deps/esp-adf"
