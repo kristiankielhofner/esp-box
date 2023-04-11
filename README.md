@@ -1,6 +1,31 @@
 * [中文版本](README_cn.md)
 
-# ESP-BOX AIoT Development Framework
+# ESP-BOX AIoT Development Framework (with some help)
+
+## Getting Started
+
+For the dactory demo
+
+Run ```cd examples/factory_demo```
+
+Run ```./utils.sh setup``` and cross your fingers and toes.
+
+### Flash
+
+To do anything involving the serial port you will need to set the PORT environment variable for all further invocations of utils.sh. Example:
+
+Linux:
+
+```export PORT=/dev/ttyACM0```
+
+Mac:
+
+```export PORT=/dev/cu.usbserial-31320```
+
+Once you have done that, run ```./utils.sh flash```. It should build, flash, and connect you to the serial monitor.
+
+### Continue the sample stuff
+
 
 <p align="left">
     <a href="https://github.com/espressif/esp-box/blob/master/LICENSE" alt="Build examples">
